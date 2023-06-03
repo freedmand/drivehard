@@ -1,0 +1,29 @@
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+  <style>
+    video {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      visibility: hidden;
+      width: auto;
+      height: auto;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" playsinline></video>
+  <canvas id="canvas"></canvas>
+  <script src="main.ts" type="module"></script>
+</body>
